@@ -2,7 +2,7 @@
 
 A minimal **AgentPlaybookPack** — every standard layer shape in one pack.
 
-Produces a simple greeting report for a named recipient.
+Produces a simple greeting report for a named recipient. Report assembly is agent responsibility; the core skill produces greeting text only.
 
 ## Try it
 

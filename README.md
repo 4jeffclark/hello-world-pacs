@@ -13,6 +13,18 @@ Distribution repo for the **Hello World** AgentPlaybookPack — a minimal pack t
 - *Run hello world for Alice.*
 - *Run hello world for Bob with a friendly sign-off and welcome banner.*
 
+Report assembly (`Report.md` structure and Inputs Resolved appendix) is agent responsibility; the core skill produces greeting text only.
+
+## APP standard (execution agents)
+
+Read in order from the [APP Standards Workbench](https://github.com/4jeffclark/agent-playbook-pack):
+
+1. [Authoring standard](https://github.com/4jeffclark/agent-playbook-pack/blob/main/standard/app-authoring.md)
+2. [Execution guide](https://github.com/4jeffclark/agent-playbook-pack/blob/main/standard/app-execution.md)
+3. [Post-run checklist](https://github.com/4jeffclark/agent-playbook-pack/blob/main/standard/post-run-checklist.md)
+
+Then consume this repo's pack manifests and referenced layer artifacts.
+
 ## About
 
-Published from the [APP Standards Workbench](https://github.com/4jeffclark/agent-playbook-pack) reference instance. APP standard: [`agent-playbook-pack/standard/app-authoring.md`](https://github.com/4jeffclark/agent-playbook-pack/blob/main/standard/app-authoring.md).
+Published from the [APP Standards Workbench](https://github.com/4jeffclark/agent-playbook-pack) reference instance.
