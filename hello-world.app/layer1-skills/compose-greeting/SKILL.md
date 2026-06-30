@@ -11,8 +11,8 @@ metadata:
 ## Procedure
 
 1. Read resolved playbook input `recipient` (default `World`)
-2. Run `scripts/run.py` with `--recipient` and `--workspace` bound to the active run subdirectory under `{agentWorkspace}` (see APP `app-execution.md` workspace layout)
-3. Read `greeting.txt` and `skill-result.json` from the workspace run directory
+2. Run `scripts/run.py` with `--recipient`, `--datastore`, and `--workspace` bound to the active run subdirectory under `{agentWorkspace}` (see APP `app-execution.md` workspace layout)
+3. Read `greeting.txt` and `skill-result.json` from the workspace run directory; use `skill-result.json` to verify `recipient` and `greeting` before report assembly
 4. Use the greeting text as the core **Greeting** section in `Report.md` (report assembly is agent responsibility)
 
 ## Scripts
@@ -22,14 +22,14 @@ metadata:
 | `scripts/run.py` | Write `greeting.txt` and `skill-result.json` to the agent workspace |
 
 ```bash
-python scripts/run.py --recipient "$RECIPIENT" --workspace "$AGENT_WORKSPACE"
+python scripts/run.py --recipient "$RECIPIENT" --datastore "$USER_DATASTORE" --workspace "$AGENT_WORKSPACE"
 ```
 
 ```powershell
-python scripts/run.py --recipient $env:RECIPIENT --workspace $env:AGENT_WORKSPACE
+python scripts/run.py --recipient $env:RECIPIENT --datastore $env:USER_DATASTORE --workspace $env:AGENT_WORKSPACE
 ```
 
-Pass `--workspace` as the platform's per-run subdirectory when available (`runs/<timestamp>-HelloWorld/`).
+Pass `--workspace` as the platform's per-run subdirectory when available (`runs/<timestamp>-HelloWorld/`). Pass `--datastore` as the bound `{userDatastore}` even when the script does not read it.
 
 ## References
 
@@ -37,8 +37,8 @@ Pass `--workspace` as the platform's per-run subdirectory when available (`runs/
 
 ## Outputs
 
-- `{agentWorkspace}/greeting.txt` — single-line greeting
-- `{agentWorkspace}/skill-result.json` — structured skill result (workspace intermediate)
+- `{agentWorkspace}/greeting.txt` — single-line greeting (used in report **Greeting** section)
+- `{agentWorkspace}/skill-result.json` — structured skill result for workspace verification before report assembly
 
 ## Used by
 

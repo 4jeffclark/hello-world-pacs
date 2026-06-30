@@ -25,6 +25,17 @@ Read in order from the [APP Standards Workbench](https://github.com/4jeffclark/a
 
 Then consume this repo's pack manifests and referenced layer artifacts.
 
+## Authors
+
+Validate manifests after changes (from a clone of [agent-playbook-pack](https://github.com/4jeffclark/agent-playbook-pack)):
+
+```bash
+pip install pyyaml jsonschema
+python /path/to/agent-playbook-pack/standard/validate-manifests.py \
+  hello-world.app/pack.app.yaml \
+  hello-world.app/layer3-playbooks/hello-world/hello-world.app.yaml
+```
+
 ## About
 
 Published from the [APP Standards Workbench](https://github.com/4jeffclark/agent-playbook-pack) reference instance.
