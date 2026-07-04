@@ -17,25 +17,25 @@ Report assembly (`Report.md` structure and Inputs Resolved appendix) is agent re
 
 ## PACS standard (execution agents)
 
-Read in order from the [PACS Standards Workbench](https://github.com/4jeffclark/agent-playbook-pack):
+Read in order from the [PACS Standards Workbench](https://github.com/4jeffclark/pacs-workbench):
 
-1. [Authoring standard](https://github.com/4jeffclark/agent-playbook-pack/blob/main/standard/pacs-authoring.md)
-2. [Execution guide](https://github.com/4jeffclark/agent-playbook-pack/blob/main/standard/pacs-execution.md)
-3. [Post-run checklist](https://github.com/4jeffclark/agent-playbook-pack/blob/main/standard/post-run-checklist.md)
+1. [Authoring standard](https://github.com/4jeffclark/pacs-workbench/blob/main/standard/pacs-authoring.md)
+2. [Execution guide](https://github.com/4jeffclark/pacs-workbench/blob/main/standard/pacs-execution.md)
+3. [Post-run checklist](https://github.com/4jeffclark/pacs-workbench/blob/main/standard/post-run-checklist.md)
 
 Then consume this repo's pack manifests and referenced layer artifacts.
 
 ## Authors
 
-Validate manifests after changes (from a clone of [agent-playbook-pack](https://github.com/4jeffclark/agent-playbook-pack)):
+Validate manifests after changes (from a clone of [pacs-workbench](https://github.com/4jeffclark/pacs-workbench)):
 
 ```bash
 pip install pyyaml jsonschema
-python /path/to/agent-playbook-pack/standard/validate-manifests.py \
+python /path/to/pacs-workbench/standard/validate-manifests.py \
   hello-world.pacs/pack.pacs.yaml \
   hello-world.pacs/layer3-playbooks/hello-world/hello-world.pacs.yaml
 ```
 
 ## About
 
-Published from the [PACS Standards Workbench](https://github.com/4jeffclark/agent-playbook-pack) reference instance.
+Published from the [PACS Standards Workbench](https://github.com/4jeffclark/pacs-workbench) reference instance.
