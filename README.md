@@ -1,12 +1,12 @@
-# Hello World APP
+# Hello World PACS
 
-Distribution repo for the **Hello World** AgentPlaybookPack — a minimal pack that produces a greeting report for a named recipient.
+Distribution repo for the **Hello World** PACS stack — a minimal capability stack that produces a greeting report for a named recipient.
 
 ## Pack
 
 | Pack | Entry |
 | --- | --- |
-| [hello-world.app/](hello-world.app/) | [`pack.app.yaml`](hello-world.app/pack.app.yaml) |
+| [hello-world.pacs/](hello-world.pacs/) | [`pack.pacs.yaml`](hello-world.pacs/pack.pacs.yaml) |
 
 ## Try it
 
@@ -15,12 +15,12 @@ Distribution repo for the **Hello World** AgentPlaybookPack — a minimal pack t
 
 Report assembly (`Report.md` structure and Inputs Resolved appendix) is agent responsibility; the core skill produces greeting text only.
 
-## APP standard (execution agents)
+## PACS standard (execution agents)
 
-Read in order from the [APP Standards Workbench](https://github.com/4jeffclark/agent-playbook-pack):
+Read in order from the [PACS Standards Workbench](https://github.com/4jeffclark/agent-playbook-pack):
 
-1. [Authoring standard](https://github.com/4jeffclark/agent-playbook-pack/blob/main/standard/app-authoring.md)
-2. [Execution guide](https://github.com/4jeffclark/agent-playbook-pack/blob/main/standard/app-execution.md)
+1. [Authoring standard](https://github.com/4jeffclark/agent-playbook-pack/blob/main/standard/pacs-authoring.md)
+2. [Execution guide](https://github.com/4jeffclark/agent-playbook-pack/blob/main/standard/pacs-execution.md)
 3. [Post-run checklist](https://github.com/4jeffclark/agent-playbook-pack/blob/main/standard/post-run-checklist.md)
 
 Then consume this repo's pack manifests and referenced layer artifacts.
@@ -32,10 +32,10 @@ Validate manifests after changes (from a clone of [agent-playbook-pack](https://
 ```bash
 pip install pyyaml jsonschema
 python /path/to/agent-playbook-pack/standard/validate-manifests.py \
-  hello-world.app/pack.app.yaml \
-  hello-world.app/layer3-playbooks/hello-world/hello-world.app.yaml
+  hello-world.pacs/pack.pacs.yaml \
+  hello-world.pacs/layer3-playbooks/hello-world/hello-world.pacs.yaml
 ```
 
 ## About
 
-Published from the [APP Standards Workbench](https://github.com/4jeffclark/agent-playbook-pack) reference instance.
+Published from the [PACS Standards Workbench](https://github.com/4jeffclark/agent-playbook-pack) reference instance.

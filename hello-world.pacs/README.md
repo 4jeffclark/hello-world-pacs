@@ -1,6 +1,6 @@
 # Hello World
 
-A minimal **AgentPlaybookPack** — every standard layer shape in one pack.
+A minimal **Portable Agent Capability Stacks** — every standard layer shape in one pack.
 
 Produces a simple greeting report for a named recipient. Report assembly is agent responsibility; the core skill produces greeting text only.
 
@@ -11,5 +11,5 @@ Produces a simple greeting report for a named recipient. Report assembly is agen
 
 ## About
 
-- **Version:** 1.0.0 (see [`pack.app.yaml`](pack.app.yaml))
+- **Version:** 1.0.0 (see [`pack.pacs.yaml`](pack.pacs.yaml))
 - **License:** MIT
